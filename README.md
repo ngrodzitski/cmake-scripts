@@ -17,7 +17,7 @@ A quick memo of usefull rules (treat it as "SHOULD BETTER", not "MUST").
 
 ## Reference
 
-* https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1#using-a-library-defined-in-the-same-cmake-tree-should-look-the-same-as-using-an-external-library
+* [Effective Modern CMake](https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)
 * https://www.youtube.com/watch?v=bsXLMQ6WgIk C++Now 2017: Daniel Pfeifer “Effective CMake"
 * https://www.youtube.com/watch?v=eC9-iRN2b04 CppCon 2017: Mathieu Ropert “Using Modern CMake Patterns to Enforce a Good Modular Design”
 
