@@ -2,7 +2,11 @@ if(COMPILER_ENABLE_ALL_WARNINGS)
     if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
         set(gcc_warnings_flags  -Wall
                                 -Wextra
+
                                 -Wpedantic
+                                # Disable an extremly noisy on gtest with clang:
+                                -Wno-gnu-zero-variadic-macro-arguments
+
                                 -Werror=unused-function
                                 -Werror=unused-variable
                                 -Werror=unused-parameter)
