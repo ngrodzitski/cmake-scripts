@@ -13,8 +13,8 @@ macro(handle_explicit_static_runtime_if_necessary)
                 CMAKE_C_FLAGS_DEBUG
                 CMAKE_C_FLAGS_RELEASE
                 CMAKE_C_FLAGS_RELWITHDEBINFO
-                CMAKE_C_FLAGS_MINSIZEREL
-                )
+                CMAKE_C_FLAGS_MINSIZEREL)
+
             foreach(cflag ${compiler_flags})
                 set(before_flags ${${cflag}} )
                 string(REPLACE "/MD" "/MT" ${cflag} "${${cflag}}")
