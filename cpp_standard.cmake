@@ -14,7 +14,7 @@ macro(cxx_14)
   set(CMAKE_CXX_EXTENSIONS OFF)
 endmacro()
 
-# C++14
+# C++17
 macro(cxx_17)
   set(CMAKE_CXX_STANDARD 17)
   set(CMAKE_CXX_STANDARD_REQUIRED ON)
