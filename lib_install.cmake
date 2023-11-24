@@ -125,8 +125,6 @@ function(lib_install_headers)
 
     foreach (header ${lib_install_headers_HEADERS} )
 
-        message(STATUS "for: ${header}")
-
         if(IS_ABSOLUTE "${header}")
             if(NOT IS_ABSOLUTE "${lib_install_headers_REMOVE_INCLUDE_DIR_PREFIX}")
                 message(FATAL_ERROR "HEADERS values and REMOVE_INCLUDE_DIR_PREFIX "
@@ -153,8 +151,6 @@ function(lib_install_headers)
             )
         endif ()
         get_filename_component(relative_to_include_dir ${header_path} PATH )
-
-        message(STATUS "for*: ${relative_to_include_dir}")
 
         install( FILES ${header}
                  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${relative_to_include_dir} )
