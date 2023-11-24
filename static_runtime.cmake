@@ -1,3 +1,5 @@
+# TODO:
+# Revisit this scrip, it's likely can be hand;ed with Conan profiles.
 macro(handle_explicit_static_runtime_if_necessary)
     if(EXPLICIT_STATIC_RUNTIME)
         message(STATUS "Using static runtime (EXPLICIT_STATIC_RUNTIME is enabled)")

@@ -1,3 +1,22 @@
+# extract_version(
+#     # The header file of which contains version of the project.
+#     # The expected fromat is the follwoing:
+#     # ```C++
+#     # // ...
+#     # #define <PRJ_PREFIX>_VERSION_MAJOR Null
+#     # #define <PRJ_PREFIX>_VERSION_MINOR Null
+#     # #define <PRJ_PREFIX>_VERSION_PATCH Null
+#     # // ...
+#     # ```
+#     # `N` - is a decimal number.
+#     # `<PRJ_PREFIX>` - is a project suffix (not ssential for version extraction).
+#    <version_file_path>
+#
+#    # Names under which to define the version parts
+#    <major_varname>
+#    <minor_varname>
+#    <patch_varname>
+# )
 function(extract_version
     version_file_path
     major_varname

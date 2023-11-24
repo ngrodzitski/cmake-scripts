@@ -1,3 +1,8 @@
+# OBSOLETE
+# For conan-based projects with conan v2 one can rely on toolchain file
+# to set the libcxx as necessary (acording the one used in `conan install ...` command,
+# either it is set explicitly: `-s:a compiler.libcxx=libstdc++` or implicitly in profile
+# or defaults).
 macro(handle_explicit_libcxx_if_necessary)
     if(EXPLICIT_LIBCXX)
         message(STATUS "Using libcxx: ${EXPLICIT_LIBCXX}")

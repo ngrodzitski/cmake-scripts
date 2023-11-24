@@ -1,3 +1,5 @@
+# DEPRECATED:
+# Practice showed that it's better to have this logic as a part of the project itself.
 if(NOT UNITTEST)
     message(FATAL_ERROR "UNITTEST is not defined!")
 endif()

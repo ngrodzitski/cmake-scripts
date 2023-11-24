@@ -1,3 +1,6 @@
+# DEPRECATED
+# Explicit lists of files showed to be a better practice in a long run.
+
 # Append sources to given targets (list-variables).
 #
 # append_src_files(

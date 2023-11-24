@@ -1,4 +1,5 @@
-# Apply LTO via global compiler flags if necessary.
+# OBSOLETE
+# For conan-based projects with conan v2 this effectively can be achieved with profiles.
 macro (handle_lto_if_necessary)
     if (EXPLICIT_BUILD_WITH_LTO)
         if (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
